@@ -1,0 +1,69 @@
+Source: haskell-hxt-unicode
+Maintainer: Debian Haskell Group <pkg-haskell-maintainers@lists.alioth.debian.org>
+Uploaders: TANIGUCHI Takaki <takaki@debian.org>, Clint Adams <clint@debian.org>
+Priority: optional
+Section: haskell
+Rules-Requires-Root: no
+Build-Depends:
+ cdbs,
+ debhelper (>= 10),
+ ghc (>= 8),
+ ghc-prof,
+ haskell-devscripts (>= 0.13),
+ libghc-hxt-charproperties-dev (<< 10),
+ libghc-hxt-charproperties-dev (>= 9),
+ libghc-hxt-charproperties-prof,
+Build-Depends-Indep: ghc-doc, libghc-hxt-charproperties-doc
+Standards-Version: 4.5.0
+Homepage: https://github.com/UweSchmidt/hxt
+Vcs-Browser: https://salsa.debian.org/haskell-team/DHG_packages/tree/master/p/haskell-hxt-unicode
+Vcs-Git: https://salsa.debian.org/haskell-team/DHG_packages.git [p/haskell-hxt-unicode]
+
+Package: libghc-hxt-unicode-dev
+Architecture: any
+Depends: ${haskell:Depends}, ${misc:Depends}, ${shlibs:Depends}
+Recommends: ${haskell:Recommends}
+Suggests: ${haskell:Suggests}
+Provides: ${haskell:Provides}
+Description: Unicode en-/decoding functions${haskell:ShortBlurb}
+ This is a part of Haskell XML Toolbox.
+ .
+ Unicode encoding and decoding functions for utf8, iso-latin-* and somes
+ other encodings, used in the Haskell XML Toolbox.
+ ISO Latin 1 - 16, utf8, utf16, ASCII are supported. Decoding
+ is done with lasy functions, errors may be detected or ignored.
+ .
+ ${haskell:Blurb}
+
+Package: libghc-hxt-unicode-prof
+Architecture: any
+Depends: ${haskell:Depends}, ${misc:Depends}, ${shlibs:Depends}
+Recommends: ${haskell:Recommends}
+Suggests: ${haskell:Suggests}
+Provides: ${haskell:Provides}
+Description: Unicode en-/decoding functions${haskell:ShortBlurb}
+ This is a part of Haskell XML Toolbox.
+ .
+ Unicode encoding and decoding functions for utf8, iso-latin-* and somes
+ other encodings, used in the Haskell XML Toolbox.
+ ISO Latin 1 - 16, utf8, utf16, ASCII are supported. Decoding
+ is done with lasy functions, errors may be detected or ignored.
+ .
+ ${haskell:Blurb}
+
+Package: libghc-hxt-unicode-doc
+Architecture: all
+Section: doc
+Depends: ${haskell:Depends}, ${misc:Depends}, ${shlibs:Depends}
+Recommends: ${haskell:Recommends}
+Suggests: ${haskell:Suggests}
+Provides: ${haskell:Provides}
+Description: Unicode en-/decoding functions${haskell:ShortBlurb}
+ This is a part of Haskell XML Toolbox.
+ .
+ Unicode encoding and decoding functions for utf8, iso-latin-* and somes
+ other encodings, used in the Haskell XML Toolbox.
+ ISO Latin 1 - 16, utf8, utf16, ASCII are supported. Decoding
+ is done with lasy functions, errors may be detected or ignored.
+ .
+ ${haskell:Blurb}
